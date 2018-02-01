@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+
+  postgres:
+    image: postgres:latest
+
+  clair:
+    image: quay.io/coreos/clair:v2.0.0
+    ports:
+      - 6060:6060
+      - 6061:6061
+    volumes:
+      - /tmp:/tmp
+      - ./clair_config:/etc/clair
+#    command: [-config, /config/config.yaml]
+
+#    image: postgres:latest
+#    image: quay.io/coreos/clair-git:latest

@@ -50,7 +50,7 @@ curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compos
 Install clair-scanner from here:
 https://github.com/arminc/clair-scanner/releases
 ```bash
-wget -O /usr/local/bin/clair-scanner 'https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64
+wget -O /usr/local/bin/clair-scanner 'https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64'
 chmod 0755 /usr/local/bin/clair-scanner
 ```
 
